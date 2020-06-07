@@ -12,20 +12,20 @@ fun showHand(h1: Int, pname: String) {
     println(pname + " picked: " + listhand.elementAt(h1))
     }
 
-fun match(player: Int, machine: Int){
-    if (player===machine){
-        println ("Draw")
-    }
-    else if (player===0 && machine===1 ) {"Player Lost"
+fun match(player: Int, machine: Int) {
+    if (player === machine) {
+        println("Draw")
+    } else if (player === 0 && machine === 1) {
+        "Player Lost"
 
-}
-   else if (player===1&& machine===2)
-    {"Player Lost"}
-
-    else if(player===2 && machine===0){
+    } else if (player === 1 && machine === 2) {
+        "Player Lost"
+    } else if (player === 2 && machine === 0) {
         "player lost"
+    } else {
+        "Player Won"
     }
-    else{"Player Won"}
+}
 
 fun main(args: Array<String>) {
     println("Starting the Rock Paper Scissors game !")
